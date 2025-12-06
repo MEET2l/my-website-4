@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+
+<section>
+    <div class="top-bar">
+        Call us @ +91 1800 4120 1580
+    </div>
+</section>
+
+<!----------------------------------------------- navbar ----------------------------------------------->
+<section>
+  <div class="container">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Spacece Logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.php">Home</a></li>
+
+            <!-- Programs -->
+            <li class="dropdown">
+                <a href="#">Programs ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Starat_your_School.html">Start Your School</a></li>
+                    <li><a href="Upgrade_your_school.html">Upgrade Your School</a></li>
+                    <li><a href="#">Parents Toddler Program</a></li>
+                </ul>
+            </li>
+
+            <!-- PTTC -->
+            <li><a href="#">PTTC</a></li>
+
+            <!-- Admission -->
+            <li class="dropdown">
+                <a href="#">Admission ▾</a>
+            </li>
+
+            <!-- About Us -->
+            <li><a href="#">About Us</a></li>
+
+            <!-- Contact Us -->
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <!-- Enquire Button -->
+        <a class="enquire-btn" href="javascript:void(0)" onclick="openPopup()">Enquire Now</a>
+
+        <!-- POPUP OVERLAY -->
+        <div class="popup-overlay" id="popup">
+            <div class="popup-box">
+
+                <!-- Close Button -->
+                <button class="close-popup" onclick="closePopup()">×</button>
+
+                <!-- ZOHO FORM STARTS HERE -->
+                <form action="https://forms.zohopublic.com/kidoenterprises/form/KreedoWebsiteContactUsForm/formperma/UxHWZ_P2f6BEfg5Q5jJFP8txtfC_XkHyoDowK3rbSIA/htmlRecords/submit"
+                    name="form" method="POST" id="form" accept-charset="UTF-8" class="enquire_form">
+
+
+                    <h2>Please fill out the form below and we will respond within 24hrs</h2>
+
+                    <!-- Hidden UTM Fields -->
+                    <input type="hidden" name="zf_referrer_name">
+                    <input type="hidden" name="zf_redirect_url">
+                    <input type="hidden" name="zc_gad">
+                    <input type="hidden" name="utm_source" id="utm_source">
+                    <input type="hidden" name="utm_medium" id="utm_medium">
+                    <input type="hidden" name="utm_campaign" id="utm_campaign">
+                    <input type="hidden" name="utm_device" id="utm_device">
+                    <input type="hidden" name="utm_Adgroup" id="utm_Adgroup">
+                    <input type="hidden" name="gclid" id="gclid">
+                    <input type="hidden" name="referrername" id="referrername">
+
+                    <!-- Inputs -->
+                    <input type="text" name="SingleLine" placeholder="Enter your name" required>
+                    <input type="email" name="Email" placeholder="Enter Your Email" required>
+                    <input type="text" name="PhoneNumber_countrycode" pattern="[0-9]{10}" placeholder="Number" required>
+
+                    <select name="Dropdown" required>
+                        <option value="">Select State</option>
+                        <option>Maharashtra</option>
+                        <option>Gujarat</option>
+                    </select>
+
+                    <select name="Dropdown1" required>
+                        <option value="">Category</option>
+                        <option value="Individual">Starting a new school</option>
+                        <option value="K-12 School">Upgrading my school</option>
+                        <option value="Teacher">Interested in Teacher Training Course</option>
+                    </select>
+
+                    <textarea name="MultiLine" placeholder="Message"></textarea>
+
+                    <!-- Captcha -->
+                    <span id="captchaText">IqOmSl</span>
+                    <input type="text" placeholder="Enter the above text" required>
+
+                    <!-- Checkbox -->
+                    <label class="check-label">
+                        <input type="checkbox" checked>
+                        Please contact me via WhatsApp, SMS, Phone, and Email
+                    </label>
+
+                    <!-- Submit -->
+                    <button class="zf-submitColor">Submit</button>
+                </form>
+                <!-- 🔥 ZOHO FORM ENDS HERE -->
+            </div>
+        </div>
+
+
+        <!-- Mobile Menu Icon -->
+        <button class="menu-btn" onclick="openMenu()">☰</button>
+    </nav>
+
+    <!-- BLACK OVERLAY -->
+    <div class="overlay" onclick="closeMenu()"></div>
+
+    <!-- SIDEBAR -->
+    <nav class="menu">
+        <button class="close-btn" onclick="closeMenu()">×</button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+  </div>
+</section>
+
+<!-- ============================
+     ADMISSION PAGE – MAIN WRAPPER
+=============================== -->
+<section class="admission-hero">
+    <div class="admission-hero-content">
+        <h1>Admission Process</h1>
+        <p>Join our professional training programs and start your journey toward a successful career in education.</p>
+        <a href="#apply" class="admission-btn">Apply Now</a>
+    </div>
+</section>
+
+
+
+
+<!-- ============================
+     APPLY NOW FORM
+=============================== -->
+<section id="apply" class="admission-form-section">
+    <h2 class="adm-head">Apply for Admission</h2>
+
+    <div class="admission-form-box">
+        <form class="admission-form-new">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="text" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Program</label>
+                    <select required>
+                        <option value="">Choose Program</option>
+                        <option>PTTC</option>
+                        <option>Preschool Teacher Training</option>
+                        <option>Certificate Courses</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label>Message (Optional)</label>
+                <textarea placeholder="Write your message here..."></textarea>
+            </div>
+
+            <button type="submit" class="admission-btn-new">Submit Application</button>
+
+        </form>
+    </div>
+</section>
+
+
+<!-- ============================
+     WHY CHOOSE US
+=============================== -->
+<section class="admission-why">
+    <h2>Why Choose Our Institute?</h2>
+
+    <div class="why-grid">
+        <div class="why-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+            <h3>Expert Faculty</h3>
+            <p>Learn from highly skilled and experienced trainers.</p>
+        </div>
+
+        <div class="why-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="">
+            <h3>Certified Programs</h3>
+            <p>Government-recognized certification with practical training.</p>
+        </div>
+
+        <div class="why-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/854/854894.png" alt="">
+            <h3>Flexible Learning</h3>
+            <p>Choose Online, Offline, or Hybrid learning modes.</p>
+        </div>
+
+        <div class="why-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png" alt="">
+            <h3>Placement Support</h3>
+            <p>Get guidance and assistance for job placement.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!----------------------------------------------- footer ----------------------------------------------->
+<footer class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <!-- Column 1: Logo + Social -->
+        <div class="footer-section">
+            <img src="assets/logo.png" class="footer-logo" alt="Preschool Logo">
+
+            <p class="footer-text">
+                Building bright futures with joyful learning.
+            </p>
+
+            <!-- Google Map -->
+            <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.713390921391!2d73.80806407371841!3d18.45131787128889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29513dc000001%3A0x6bcacb06efbe645c!2sSpacECE%20INDIA%20FOUNDATION!5e0!3m2!1sen!2sin!4v1764842317194!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+
+        <!-- Column 2: Contact Form (Parents Admission Inquiry) -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+
+            <form class="footer-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <input type="text" placeholder="Your Phone">
+                <select>
+                    <option>Select Program</option>
+                    <option>Playgroup</option>
+                    <option>Nursery</option>
+                    <option>Jr. KG</option>
+                    <option>Sr. KG</option>
+                </select>
+                <textarea placeholder="Message"></textarea>
+                <button type="submit" class="footer-btn">Submit</button>
+            </form>
+        </div>
+
+        <!-- Column 3: Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="link-wrap">
+              <ul class="footer-links">
+                <li><a href="#">About Preschool</a></li>
+                <li><a href="#">Our Programs</a></li>
+                <li><a href="#">Our Vision</a></li>
+              </ul>
+              <ul class="footer-links">
+                <li><a href="#">Parent Resources</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/SpacECE/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/SpacECE/"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/SpacECE/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.youtube.com/SpacECE/"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.Whatsapp.com/SpacECE/"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        © 2025 Your Preschool Name — All Rights Reserved
+    </div>
+</footer>
+
+
+
+
+<!--------------- Dropdown button  ---------------->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.querySelector(".dropdown > a");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+
+    dropdown.addEventListener("click", function (e) {
+        e.preventDefault(); // link click disable
+        dropdownMenu.style.display =
+            dropdownMenu.style.display === "block" ? "none" : "block";
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function (e) {
+        if (!dropdown.contains(e.target) && !dropdownMenu.contains(e.target)) {
+            dropdownMenu.style.display = "none";
+        }
+    });
+});
+</script>
+
+<!--------------- menu button  ---------------->
+<script>
+    function openMenu() {
+        document.querySelector('.menu').style.right = '0px';
+        document.querySelector('.overlay').style.display = 'block';
+    }
+    function closeMenu() {
+        document.querySelector('.menu').style.right = '-250px';
+        document.querySelector('.overlay').style.display = 'none';
+    }
+</script>
+<!--------------- Equairy form popup-box  ---------------->
+<script>
+    function openPopup() {
+        document.getElementById("popup").style.display = "block";
+        document.body.classList.add("no-scroll");
+    }
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        document.body.classList.remove("no-scroll");
+    }
+</script>
+<!--------------- footer   ---------------->
+<!-- <script>
+function goToThankYou(e) {
+    e.preventDefault();  // stop default action
+    window.location.href = "thankyou.php";  // your thank you page
+}
+</script> -->
+
+
+</body>
+</html>
